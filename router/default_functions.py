@@ -1,6 +1,6 @@
 from fastapi import Request, Response, HTTPException, status
 from fastapi.encoders import jsonable_encoder
-from database import db
+from core.database import db
 
 
 def get_one(id: str, collection: str, req: Request, exception: HTTPException):

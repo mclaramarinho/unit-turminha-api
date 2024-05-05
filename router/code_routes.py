@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body, Request, Response, status, Security
 from typing import List
 from fastapi import HTTPException, status
-from database import db
+from core.database import db
 from router.default import PATHS, exception_404, response_descriptions
 from router.default_functions import create_one
 from api_keys import get_api_key

@@ -4,8 +4,8 @@ from fastapi.requests import Request
 
 from router.default import PATHS, exception_404, response_descriptions
 from router.default_functions import get_one, get_all, delete_one, update_one, create_one
-from models.Admin import Admin
-from models.AdminUpdate import AdminUpdate
+from models.admin.Admin import Admin
+from models.admin.AdminUpdate import AdminUpdate
 from api_keys import get_api_key
 
 

@@ -1,3 +1,6 @@
 /.env
 /test_resources/
 /.idea/discord.xml
+.idea/
+.venv/
+**/__pycache__/**

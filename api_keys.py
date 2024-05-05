@@ -1,14 +1,11 @@
-from fastapi import Request, Response, HTTPException, status, Security, Header, Depends
+from fastapi import HTTPException, status, Security, Header, Depends
 from fastapi.security import APIKeyHeader
-from dotenv import load_dotenv
-from os import environ
 
-load_dotenv()
-
+from core.config import settings
 
 API_KEYS = [
-    environ.get("TEST_X_API_KEY"),
-    environ.get("PROD_X_API_KEY")
+    settings.TEST_X_API_KEY,
+    settings.PROD_X_API_KEY
 ]
 
 _api_key_header = APIKeyHeader(name="x-api-key")
