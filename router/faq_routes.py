@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body, Request, Response, status, Security
 from typing import List
-from models.FAQ import FAQ
-from models.FAQUpdate import FAQUpdate
+from models.faq.FAQ import FAQ
+from models.faq.FAQUpdate import FAQUpdate
 from router.default import PATHS, exception_404, response_descriptions
 from router.default_functions import create_one, update_one, get_one, get_all, delete_one
 from api_keys import get_api_key

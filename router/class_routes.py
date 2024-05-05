@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body, Request, Response, status, Security
 from typing import List
-from models.Class import Class
-from models.ClassUpdate import ClassUpdate
+from models.classess.Class import Class
+from models.classess.ClassUpdate import ClassUpdate
 from router.default import PATHS, exception_404, response_descriptions
 from router.default_functions import get_one, get_all, delete_one, update_one, create_one
 from api_keys import get_api_key

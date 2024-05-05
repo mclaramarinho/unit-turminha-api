@@ -9,11 +9,11 @@ PATHS = {
 }
 
 
-def exception_404(what = ""):
+def exception_404(what:str):
     return HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"{what} with ID {id} was not found.")
 
 
-def response_descriptions(what = ""):
+def response_descriptions(what:str):
     return {
         "post": f"Create a new {what}",
         "put": f"Update an existing {what}",

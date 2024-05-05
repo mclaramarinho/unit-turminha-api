@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body, Request, Response, status, Security
 from typing import List
-from models.ImportantContact import ImportantContact
-from models.ImportantContactUpdate import ImportantContactUpdate
+from models.important.ImportantContact import ImportantContact
+from models.important.ImportantContactUpdate import ImportantContactUpdate
 from router.default import PATHS, exception_404, response_descriptions
 from router.default_functions import get_one, get_all, delete_one, update_one, create_one
 from api_keys import get_api_key
